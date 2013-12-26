@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+  <script src="jquery.js"></script>
+  <script src="minimalTimeline.js"></script>
+  <style>
+    #timeline { margin: 200px 5%; }
+  </style>
+  <body>
+    <div id="timeline"></div>
+
+    <script>
+      var jobs = new Array();
+      jobs[0] = new Array();
+      jobs[1] = new Array();
+      jobs[2] = new Array();
+
+      jobs[0][0] = "Web DEveloper";
+      jobs[0][1] = "1305936000";
+      jobs[0][2] = "Apple Inc";
+      jobs[0][3] = "Description of the mission ...";
+
+      jobs[1][0] = "Web Designer";
+      jobs[1][1] = "1378771200";
+      jobs[1][2] = "Facebook Inc";
+      jobs[1][3] = "Description of the mission being a designer ...";
+
+      jobs[2][0] = "Full Stack Developer";
+      jobs[2][1] = "1355270400";
+      jobs[2][2] = "Microsft";
+      jobs[2][3] = "Description about the microsoft job ...";
+
+      $("#timeline").minimalTimeline({
+          'data': jobs,
+          'LineBackgroundColor': "#4fefef",
+          'ArrowBackgroundColor': "#f04fed",
+      });
+    </script>
+  </body>
+</html>
